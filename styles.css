@@ -1,0 +1,68 @@
+/*css reset*/
+*{
+     margin: 0;
+     padding: 0;
+
+
+ }
+
+ /*css variables*/
+
+ :root{
+     --navbar-height: 56px;
+ }
+
+ /* navigation bar*/
+ #navbar{
+     display: flex; /*sequence mein align krne ke lite*/
+     align-items: center;
+ }
+
+ /*navigation bar: logo and image*/
+ #logo img {
+    height: 65px;
+    margin: 3px 6px;
+}
+
+
+/* navigation bar: list styling*/
+#navbar{
+    position: relative;  /* jo baackground black aala jayada aa riya o relative ho ju means navbar naal shi hoo ju*/
+ }
+#navbar ul{
+    display: flex; /*home services sb row mein aa jayenge*/
+ 
+}
+
+#navbar ul li{
+ color: white;
+ list-style: none;
+ font-size: 1.3rem;
+}
+
+#navbar::before{   /*background&*/
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+
+}
+#navbar ul li a{
+ padding: 3px 22px;
+ border-radius: 20px;
+}
+#navbar ul li a:hover{
+    padding: 3px 22px;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    
+   }
+
+#home {
+    display: flex;
+}
